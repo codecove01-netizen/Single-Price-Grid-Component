@@ -37,7 +37,7 @@
 <h3 align="center">💻 Desktop View</h3>
 
 <p align="center">
-  <img src="" alt="Desktop Preview" width="900">
+  <img src="./singlePriceDesktop.png" alt="Desktop Preview" width="900">
 </p>
 
 <br>
