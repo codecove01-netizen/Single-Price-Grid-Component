@@ -45,7 +45,7 @@
 <h3 align="center">📱 Mobile View</h3>
 
 <p align="center">
-  <img src="./singleMobile.png" alt="Mobile Preview" width="250">
+  <img src="./singlePriceMobile.png" alt="Mobile Preview" width="250">
 </p>
 
 ---
