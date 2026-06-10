@@ -1,0 +1,222 @@
+
+/* =================================================
+   Frontend Mentor - Single Price Grid Component
+   Author: Arati D'sa
+=================================================== */
+
+/* =================================================
+                CSS RESET
+=================================================== */
+*{
+    margin:0;
+    padding:0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+    height:auto;
+}
+/* =================================================
+                CUSTOM PROPERTIES
+=================================================== */
+:root{
+     /* Colors */
+     /* Primary Colors */
+    --teal-500: hsl(179, 62%, 43%);
+    --green-400: hsl(71, 73%, 54%);
+    --teal-accent:hsla(179, 62%, 43%,0.85);
+
+    /* Neutral Colors */
+    --teal-100: hsl(204, 43%, 93%);
+    --gray-500: hsl(218, 22%, 67%);
+
+    /* Font Size */
+    --fs-16:1rem;
+
+    /* Font Family */
+    --ff-karla:"Karla", sans-serif;
+
+    /* Font Weight */
+    --fw-400: 400;
+    --fw-700: 700;
+}
+/* =================================================
+                GLOBAL STYLES
+=================================================== */
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: var(--ff-karla);
+    font-size: var(--fs-16);
+    background-color: var(--teal-100);
+}
+/* =================================================
+                LAYOUT
+=================================================== */
+.container{
+    width:min(19.69rem,100%);
+}
+.card-container{    
+    display: grid;
+}
+.community,
+.subscription,
+.why-us{
+    padding:clamp(1.45rem,2.5vw,2.4rem);
+}
+
+/* COMMUNITY */
+.community-container{
+    background-color: white;
+    border-radius: 0.63rem 0.63rem 0 0;
+}
+.community{
+    margin-block-start: 0.3rem;
+}
+.community-title{
+    font-size: clamp(1.23rem,2vw,1.46rem);
+    color:var(--teal-500);
+    font-weight: var(--fw-700);
+}
+.community-descp{
+    margin-block-start:1.5rem;
+    font-size: clamp(0.97rem,1.5vw,1.1rem);
+    font-weight: var(--fw-700);
+    color:var(--green-400);
+}
+.community-info{
+    margin-block-start:1.2rem;
+    font-size: 0.86rem;
+    line-height: 1.9;
+    margin-block-end:0.5rem;
+}
+
+/* SUBSCRIPTION */
+.subscription-container{
+    background-color: var(--teal-500);
+}
+.subscription{
+    color:var(--teal-100);   
+    font-weight: var(--fw-700); 
+}
+.subscription-title{
+    font-size: 1.1rem;
+}
+.subscription-cost{
+    font-size:2rem;
+    margin-block-start:1.3rem;
+    display: flex;
+    align-items: center;
+    gap:0.63rem;
+}
+.perMonth{
+    font-size: 0.95rem;    
+    opacity:0.5;
+}
+.subscription-descp{
+    font-size: 1rem;   
+    margin-block-start:0.5rem;
+    font-weight: var(--fw-400);
+}
+.signUp-btn{
+    margin-block-start:1.8rem;
+    width:100%;
+    padding-block:0.9rem;
+    font-size: 1rem;
+    font-weight: var(--fw-700);
+    background-color: var(--green-400);
+    color:var(--teal-100); 
+    border: none;
+    border-radius: 0.63rem;
+}
+.signUp-btn:hover{
+    cursor: pointer;
+}
+.signUp-btn:hover,
+.signUp-btn:focus-visible{
+    outline:3px solid white;
+    outline-offset:3px;
+}
+
+/* WHY US */
+.why-us-container{
+    background-color: var(--teal-accent);
+    border-radius:0 0 0.63rem 0.63rem;
+}
+.why-us{
+    color:var(--teal-100);
+    font-weight: var(--fw-400);
+}
+.why-us-title{
+    font-weight: var(--fw-700);
+    font-size: 1.2rem;
+}
+.why-us-descp{
+    margin-block-start: 1.1rem;
+    font-size: 0.87rem;
+    list-style-type: none;
+    line-height: 1.4;
+    opacity:0.8;
+}
+
+/* FOOTER */
+footer{
+    font-size: 0.9rem;
+    color:var(--teal-500);
+    font-weight: var(--fw-700);
+}
+footer a{
+    text-decoration: none;
+    color:var(--green-400);
+}
+footer a:hover,
+footer a:focus-visible{
+    color:var(--gray-500);  
+}
+
+/* =================================================
+                DESKTOP STYLES
+=================================================== */
+@media screen and (min-width:48rem){
+    .container{
+        width:min(39.75rem,100%);
+    }
+    .card-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "top top"
+            "left right";
+    }
+    .community-container{
+        grid-area:top;
+    }
+    .community{
+         margin-block-start: 0.1rem;
+    }
+    .community-info{
+        margin-block-start:0.8rem;
+        font-size: clamp(0.86rem,1.5vw,0.98rem);
+        line-height: 1.65;
+        margin-block-end:0.2rem;
+}
+    .subscription-container{
+        grid-area: left;
+        border-radius:0 0 0 0.63rem;
+    }
+    .subscription-cost{
+        margin-block-start:1.2rem;
+    }
+    .why-us-container{
+        grid-area: right;
+        border-radius:0 0 0.63rem 0;
+    }
+}
