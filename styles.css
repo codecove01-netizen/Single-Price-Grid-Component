@@ -51,8 +51,10 @@ img{
                 GLOBAL STYLES
 =================================================== */
 body{
-    display: grid;
-    place-items: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
     min-height: 100vh;
     font-family: var(--ff-karla);
     font-size: var(--fs-16);
