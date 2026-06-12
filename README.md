@@ -55,6 +55,7 @@
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/Flexbox-Modern_Layout-563D7C?style=for-the-badge">
+  <img src="https://img.shields.io/badge/CSS_Grid-Layout-FF6F00?style=for-the-badge">
   <img src="https://img.shields.io/badge/Responsive-Design-00C853?style=for-the-badge">
 </p>
 
